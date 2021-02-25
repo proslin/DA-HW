@@ -30,6 +30,7 @@ a {
 
 header {
     flex: 0 0 auto;
+    position:sticky;
     
 }
 
@@ -50,7 +51,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position:relative;
+  
   font-size: 14px;
   height: 48px;
   padding: 6px;
@@ -60,7 +61,7 @@ footer {
   color:black;
 }
 
-.menu a:hover {
+.link-menu-item:hover {
   text-decoration: underline;
 } 
 
@@ -90,25 +91,24 @@ footer {
 
 #services_window {
   display: none;
-    position: absolut;
-  top: 100px;
-  left: 1300px;
+  position: absolut;
+  padding: 10px 0 10px 10px;
   border: 1px solid #dfe1e5;
   border-radius: 5px;
   width: 300px;
   height: 400px;
+  box-sizing:border-box;
 }
 
-.services-block-wrap {
- height: 84px;
- width: 84px;
- margin: 10px;
- border-radius: 5px;
+.services_window-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: 380px;
+  overflow-y: scroll;
 }
 
 .services-block-wrap:hover {
   background-color: #dfe1e5;
-  text-decoration: none;
 }
 
 .services-block {
@@ -117,11 +117,25 @@ footer {
     height: 64px;
     width: 64px;
     display: flex;
-    margin-right: 10px;
+}
+
+.services-block-link {
+  display: block;
+  height: 90px;
+ width: 90px;
+ border-radius: 5px;
+ padding: 0 16px;
+ box-sizing:border-box;
+ text-align: center;
+}
+
+.services-block-link:hover, .services-block-text:hover {
+  background-color: #f8f9fa;
 }
 
 .services-block-text {
-  margin-top: 10px;
+  margin-top: 0px;
+  margin: 0 auto;
 }
 
 .services-traslate {
@@ -142,6 +156,101 @@ footer {
 
 .services-youtube {
   background-position: 0 -2829px;
+}
+
+.services-play {
+  background-position: 0 -1035px; 
+}
+
+.services-gmail {
+  background-position: 0 -2760px;
+}
+
+.services-calendar {
+  background-position: 0 -1518px;
+}
+
+.services-photos {
+  background-position: 0 -69px;
+}
+
+.services-news {
+  background-position: 0 -1587px;
+}
+
+.services-meet {
+  background-position: 0 -1173px;
+}
+
+.services-duo {
+  background-position: 0 -1794px;
+}
+
+.services-chrome {
+ background-position: 0 -2691px;
+}
+
+.services-group1 {
+  border-bottom: 1px solid #dfe1e5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-group2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-docs {
+  background-position: 0 -690px;
+}
+
+.services-blogger {
+  background-position: 0 -2967px;
+}
+
+.services-contacts {
+  background-position: 0 -1932px;
+}
+
+.services-hangouts {
+  background-position: 0 -2415px;
+}
+
+.services-sheets {
+  background-position: 0 -2553px;
+}
+
+.services-slides {
+  background-position: 0 0;
+}
+
+.services-books {
+  background-position:  0 -621px;
+}
+
+.services-keep {
+  background-position: 0 -483px;;
+}
+
+.services-earth {
+  background-position: 0 -207px;
+}
+
+.services-podcasts {
+  background-position: 0 -345px;
+}
+
+.another-services-btn {
+  color: #7ca6fc;
+  padding: 5px 20px 5px 20px;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 5px;
+}
+
+.another-services-btn:hover {
+  background-color: #dfe1e5;
 }
 
 .profile {

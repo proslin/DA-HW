@@ -81,6 +81,7 @@ footer {
   height: 32px;
   background-image: url(../img/hamburger.svg);
   background-position: 4px 4px;
+  position: relative;
 }
 
 #hamburger:hover {
@@ -91,7 +92,10 @@ footer {
 
 #services_window {
   display: none;
-  position: absolut;
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  z-index: 1000;
   padding: 10px 0 10px 10px;
   border: 1px solid #dfe1e5;
   border-radius: 5px;
@@ -247,6 +251,8 @@ footer {
   background-color: #fff;
   border: 1px solid #dfe1e5;
   border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .another-services-btn:hover {
